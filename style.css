@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&displa=swap');
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family:"Poppins", sans-serif;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(#000000 50%, #ffb92a 50%);
+}
+.container{
+font-size: 16px;
+width: 90vw;
+max-width: 37.5em;
+/* margin: auto ; */
+/* margin-top: -15rem; */
+padding: 3em 1.8em;
+background-color: #201f28;
+border-radius: 10px;
+box-shadow: 1.2em 2em 3em rgba(0, 0, 0, 0.2);
+position: absolute;
+transform: translate(-50%, -50% );
+top: 50%;
+left: 50%;
+
+}
+.search{
+display: grid;
+grid-template-columns: 9fr 3fr;
+gap: 1.2em;
+
+}
+.search input,
+.search button{
+font-size: 0.9em;
+outline: none;
+border-radius: 0.3em;
+}
+.search input{
+background-color: transparent ;
+border: 1px solid rgba(240, 255, 255, 0.513);
+padding: 0.7em;
+color: #ffff;
+}
+.search input {
+    border-color: #ffff;
+}
+
+.search button{
+    background-color: #ffb92a;
+    border: none;
+    cursor: pointer;
+}
+
+#result{
+    color: #ffff;
+}
+
+.info{
+    position: relative;
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    align-items: center;
+    margin-top: .5rem;
+}
+
+.info .poster{
+    width: 100%;
+}
+
+.info h2{
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: .1rem;
+}
+
+.info .rating{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .3rem;
+    margin: .5rem;
+}
+
+
+.info .rating img{
+    width: 10%;
+}
+
+.details{
+    display: flex;
+    font-size: .8rem;
+    gap: .8rem;
+    justify-content: center;
+    color: rgba(240, 255, 255, 0.513);
+    margin: .8rem;
+    font-weight: 300;
+
+}
+
+.genre {
+    display: flex;
+    justify-content: space-around;
+}
+
+.genre div{
+    border: 1px solid rgba(240, 255, 255, 0.513);
+    font-size: .7rem;
+    padding: .7rem;
+    border-radius: .5rem;
+    font-weight: 300;
+}
+
+h3{
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+p{
+    font-size: .6rem;
+    font-weight: 300;
+    line-height: 1.3rem;
+    text-align: justify;
+    color: rgba(240, 255, 255, 0.513);
+}
+
+.msg{
+    text-align: center;
+}
+
+@media screen and (max-width: 600px){
+    .container{
+        font-size: 14px;
+    }
+    .info{
+        grid-template-columns: 1fr;
+    }
+    .poster{
+        margin: auto;
+        width: auto ;
+        max-height: 10.8rem;
+    }
+}
